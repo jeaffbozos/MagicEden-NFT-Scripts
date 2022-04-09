@@ -9,8 +9,8 @@
 - [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
   - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Finder)  
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
-- [Find Me](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#find-me)
-- [Tip Jar](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#Solana-Tip-Jar)
+- [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
+- [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
 
 ## Finding Market Symbols
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (MagicEden, HowRare.is). 
@@ -31,7 +31,7 @@
 
 ## Deal Sniper
 
-[[Back to contents]](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#contents)
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the top ```top_n``` deals found for a specified collection on MagicEden by HowRare.is rarity. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
 
@@ -54,6 +54,8 @@ or (top 10 default):
 ```python3 deal_sniper.py gooney_toons gooneytoons```
 
 ## Wallet Attribute Evaluation
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is clearly a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look at one collection at a time in a users wallet.
 
