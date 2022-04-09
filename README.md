@@ -7,7 +7,7 @@
 ## Contents
 - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
 - [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
-  - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Finder)  
+  - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
 - [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
