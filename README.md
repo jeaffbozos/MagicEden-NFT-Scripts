@@ -33,7 +33,7 @@
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the ```top_n``` deals found for a specified collection on MagicEden and HowRare.is. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the top ```top_n``` deals found for a specified collection on MagicEden by HowRare.is rarity. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Deal Ratio :=** (NFT_RANK / NFTS_IN_COLLECTION) * LISTING_PRICE
 
@@ -55,7 +55,7 @@ or (top 10 default):
 
 ## Wallet Attribute Evaluation
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is clearly a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look at one collection at a time.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is clearly a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look at one collection at a time in a users wallet.
 
 **Run With:**
 
