@@ -25,7 +25,7 @@
 
 ![MagicEden](https://imgur.com/KF80Rwn.png)
 
-* Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections HowRare.is collection symbol
+* Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections MagicEden collection symbol
 
 ## Scripts
 
