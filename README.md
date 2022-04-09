@@ -13,7 +13,7 @@
 - [Tip Jar](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#Solana-Tip-Jar)
 
 ## Finding Market Symbols
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (ME, HowRare.is). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (MagicEden, HowRare.is). 
 
 **HowRare.is Collection Symbol:**
 
