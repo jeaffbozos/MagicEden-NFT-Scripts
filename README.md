@@ -19,13 +19,13 @@
 
 ![HowRare](https://imgur.com/QgD1QYI.png)
 
-* Search the collection in the search bar, the code after the / is your collections HowRare.is collection symbol
+* Search the collection in the search bar, the code after the ```/``` in the url is your collections HowRare.is collection symbol
 
 **MagicEden Collection Symbol:**
 
 ![MagicEden](https://imgur.com/KF80Rwn.png)
 
-* Search the collection in the search bar, the code after the /marketplace/ is your collections HowRare.is collection symbol
+* Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections HowRare.is collection symbol
 
 ## Scripts
 
