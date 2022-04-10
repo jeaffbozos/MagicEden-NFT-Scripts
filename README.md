@@ -2,12 +2,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repo contains scripts that access NFT APIs such as MagicEden (marketplace) or HowRare.is (rarity tools) to analyze the Solana NFT market. These tools are designed to add to the original features MagicEden provides. At the point of writing each script MagicEden has not implemented the feature (to the best of my knowledge). If at any point MagicEden implements a feature in this repo or a similar feature I will do my best to note it in the sections below.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **WARNING:** This repo is currently in the early stages of development. While in the early stages scripts are added when they function not when they are made most convenient to the user. The scripts below should function; however, are prone to UX/UI changes (ex: input style, number of collections, extra input flags). Expect more scripts, more configurations, and better error handling in the future.
-
 ## Contents
 - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
 - [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
   - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
+  - [Unique Sellers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Unique-Sellers)
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
 - [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
@@ -52,6 +51,24 @@ For Example:
 or (top 10 default):
 
 ```python3 deal_sniper.py gooney_toons gooneytoons```
+
+## Unique Sellers
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account. 
+
+**DEMO:**
+
+![Un_Seller](https://imgur.com/qTbnq1D.png)
+
+**Run With:**
+
+```python3 unique_sellers.py ME_COLLECTION_SYMBOL```
+
+For Example:
+
+```python3 unique_sellers.py solgods```
 
 ## Wallet Attribute Evaluation
 
