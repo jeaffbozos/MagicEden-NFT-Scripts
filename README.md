@@ -57,7 +57,7 @@ or (top 10 default):
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is clearly a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look at one collection at a time in a users wallet.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look one collection at a time in a users wallet.
 
 **Run With:**
 
