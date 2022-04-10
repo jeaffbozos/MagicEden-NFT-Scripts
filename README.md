@@ -7,13 +7,13 @@
 ## Contents
 - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
 - [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
-  - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Finder)  
+  - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
-- [Find Me](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#find-me)
-- [Tip Jar](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#Solana-Tip-Jar)
+- [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
+- [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
 
 ## Finding Market Symbols
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (ME, HowRare.is). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (MagicEden, HowRare.is). 
 
 **HowRare.is Collection Symbol:**
 
@@ -25,15 +25,15 @@
 
 ![MagicEden](https://imgur.com/KF80Rwn.png)
 
-* Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections HowRare.is collection symbol
+* Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections MagicEden collection symbol
 
 ## Scripts
 
 ## Deal Sniper
 
-[[Back to contents]](https://github.com/WilliamAmbrozic/Solana-NFT-Analytics-Tools#contents)
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the ```top_n``` deals found for a specified collection on MagicEden and HowRare.is. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the top ```top_n``` deals found for a specified collection on MagicEden by HowRare.is rarity. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Deal Ratio :=** (NFT_RANK / NFTS_IN_COLLECTION) * LISTING_PRICE
 
@@ -55,7 +55,9 @@ or (top 10 default):
 
 ## Wallet Attribute Evaluation
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is clearly a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look at one collection at a time.
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MagicEden provides an evaluation of a users wallet by the floor value of each NFT. This evaluation is a lower bound on the true market value of the NFTs in a wallet because it ignores attribute rarity. The ```wallet_evaluation.py``` will instead look and add up the value of each NFT by it's highest attribute floor. Attributes with no floor are given a value of zero (this will likely change). For now the script will only look one collection at a time in a users wallet.
 
 **Run With:**
 
