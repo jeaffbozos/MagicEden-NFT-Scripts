@@ -7,6 +7,8 @@
 - [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
   - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
   - [Unique Sellers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Unique-Sellers)
+  - [Attribute Count Floors](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Count-Floors)
+  - [Attribute Count Listing Search](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Count-Listing-Search)
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
 - [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
@@ -69,6 +71,51 @@ or (top 10 default):
 For Example:
 
 ```python3 unique_sellers.py solgods```
+
+## Attribute Count Floors
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```attribute_count_floors.py``` will provide the current floors for attribute counts on MagicEden along with the link to the floor NFT per count.
+
+**DEMO:**
+
+![floors](https://imgur.com/oE8D5M3.png)
+
+**Run With:**
+
+```python3 attribute_count_floors.py ME_COLLECTION_SYMBOL``` or 
+
+```python3 attribute_count_floors.py ME_COLLECTION_SYMBOL HR_COLLECTION_SYMBOL``` (much faster, if listed on HowRare.is)
+
+For Example:
+
+```python3 attribute_count_floors.py solgods``` or
+
+```python3 attribute_count_floors.py solgods solgods```
+
+## Attribute Count Listing Search
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```attribute_count_listings.py``` will provide the current listings for a specific attribute count on MagicEden along with the NFT links.
+
+**DEMO:**
+
+![listings](https://imgur.com/haKZDSt.png)
+
+**Run With:**
+
+```python3 attribute_count_listings.py ME_COLLECTION_SYMBOL ATTR_NUM``` or 
+
+```python3 attribute_count_listings.py ME_COLLECTION_SYMBOL HR_COLLECTION_SYMBOL ATTR_NUM``` (much faster, if listed on HowRare.is)
+
+For Example:
+
+```python3 attribute_count_listings.py solgods 3``` or
+
+```python3 attribute_count_listings.py solgods solgods 3```
+
 
 ## Wallet Attribute Evaluation
 
